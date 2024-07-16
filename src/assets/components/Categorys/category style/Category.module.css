@@ -1,0 +1,41 @@
+.catalogs {
+  width: 100%;
+  max-width: 250px;
+  padding: 0px 10px;
+  display: flex;
+}
+
+.categort_item {
+  height: 350px;
+  width: 300px;
+  background-color: white;
+  box-shadow: 0 0 10px rgb(0, 0, 0.2);
+}
+.categort_item img {
+  width: 100%;
+  object-fit: cover;
+  max-height: 250px;
+  padding: 0 10px;
+}
+.categort_item a {
+  text-decoration: none;
+  color: black;
+}
+
+.categort_item h2,
+.categort_item p {
+  padding: 5px;
+  margin-left: 15px;
+}
+.categort_item p {
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(9, 132, 200);
+}
+.category {
+  position: relative;
+  margin-top: -18%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+}

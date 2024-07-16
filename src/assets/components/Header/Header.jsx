@@ -4,7 +4,6 @@ import React from "react";
 import Headercss from "./Header.module.css"; // Import your CSS file for styling
 import { IoLocationOutline } from "react-icons/io5";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Dropdown from "react-bootstrap/Dropdown";
 
 const Header = () => {
   return (
