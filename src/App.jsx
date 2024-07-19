@@ -1,17 +1,19 @@
 import "./App.css";
-import Categorys from "./assets/components/Categorys/Categorys";
-import Header from "./assets/components/Header/Header";
-import HeroPages from "./assets/components/HeroPages/HeroPages";
-import Items from "./assets/components/Items/Items";
+import { Routes, Route } from "react-router-dom";
+import Outlate from "./assets/components/Outlate/Outlate";
+import Home from "./assets/components/Outlate/Home";
+import MoreCatagortys from "./assets/components/MoreDetailCategorys/MoreCatagortys";
+import Cart from "./assets/components/Cart/Cart";
 
 function App() {
   return (
-    <>
-      <Header />
-      <HeroPages />
-      <Categorys />
-      <Items />
-    </>
+    <Routes>
+      <Route path="/" element={<Outlate />}>
+        <Route index element={<Home />} />
+        <Route path="/morecatagorys/:morecata" element={<MoreCatagortys />} />
+        <Route path="/carts" element={<Cart />} />
+      </Route>
+    </Routes>
   );
 }
 

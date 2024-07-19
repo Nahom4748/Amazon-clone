@@ -12,5 +12,4 @@ function Categorys() {
     </div>
   );
 }
-
 export default Categorys;

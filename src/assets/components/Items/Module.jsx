@@ -8,9 +8,9 @@ import ReactImageMagnify from "react-image-magnify";
 const Module = ({ data }) => {
   const [load, setLoad] = useState(false);
   let img = data.image;
+
   return (
     <div className={itemscss.item_detail}>
-      {/* <img src={data.image} alt="" /> */}
       <ReactImageMagnify
         {...{
           smallImage: {
@@ -20,8 +20,8 @@ const Module = ({ data }) => {
           },
           largeImage: {
             src: img,
-            width: 500,
-            height: 500,
+            width: 900,
+            height: 900,
           },
           isHintEnabled: true,
         }}

@@ -4,11 +4,15 @@
   width: 100%;
   max-width: 100%;
   height: 9vh;
-  position: sticky;
-  z-index: 99;
-  top: 0;
+  position: fixed;
+  box-sizing: border-box;
 }
-
+.fixed {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding-bottom: 60px;
+}
 .Header_left_logos {
   width: 260px;
   display: flex;
@@ -24,6 +28,12 @@
   text-decoration: none;
   color: white;
 }
+
+/* .Header_logo img {
+  padding: 9px 10px 0;
+  width: 90%;
+  height: 90%;
+} */
 
 .Header_logo:hover {
   cursor: pointer;
@@ -89,13 +99,116 @@
   font-size: 0.9rem;
 }
 .midle {
-  width: 715px;
+  width: 45%;
   height: 39px;
   margin: auto 0px;
-  border: 2px solid red;
+  border: none;
 }
 button {
   height: 39px;
   margin: auto 0px;
   margin-left: 0;
+}
+.option {
+  width: 55px;
+  height: 39px;
+  font-size: 12px;
+  padding: 10px;
+  margin-top: 11px;
+  border: none;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  background-color: rgba(223, 219, 219, 0.897);
+}
+.option:hover {
+  cursor: pointer;
+  border-color: aqua;
+}
+.search {
+  border: none;
+  color: rgb(0, 0, 0);
+  margin-top: 11px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-color: rgb(145, 246, 254);
+}
+
+.search:hover {
+  cursor: pointer;
+  background-color: rgba(9, 128, 207, 0.877);
+}
+.flag {
+  width: 22px;
+}
+.right {
+  display: flex;
+}
+.right_inner {
+  margin-left: 10px;
+  margin-top: 15px;
+}
+.lang {
+  color: rgb(255, 255, 255);
+  background-color: black;
+  border: none;
+  font-weight: bold;
+}
+.hello {
+  color: white;
+  padding-top: 10px;
+  padding: 0 10px;
+}
+
+.BOLD {
+  font-weight: bold;
+}
+.hello p {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+}
+.in,
+.hello {
+  padding-top: 10px;
+  margin: 6px 0px;
+}
+.in:hover,
+.hello:hover {
+  cursor: pointer;
+  border: 1px solid white;
+}
+.cart {
+  color: white;
+  font-size: 50px;
+
+  padding-right: 10px;
+}
+.cart_box {
+  color: white;
+  display: flex;
+  padding-top: 2px;
+  margin: 6px 0px;
+}
+.cart_box:hover {
+  cursor: pointer;
+  border: 1px solid rgb(255, 255, 255);
+}
+.crt {
+  margin-top: 20px;
+}
+.counter {
+  position: relative;
+  font-weight: bold;
+  right: 30px;
+}
+@media screen and (max-width: 576px) {
+  .Header {
+    display: flex;
+    flex-direction: column !important;
+    height: auto;
+  }
+
+  .lang {
+    display: none;
+  }
 }
