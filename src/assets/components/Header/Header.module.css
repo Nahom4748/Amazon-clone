@@ -1,4 +1,4 @@
-.Header {
+/* .Header {
   background-color: black;
   display: flex;
   width: 100%;
@@ -28,12 +28,6 @@
   text-decoration: none;
   color: white;
 }
-
-/* .Header_logo img {
-  padding: 9px 10px 0;
-  width: 90%;
-  height: 90%;
-} */
 
 .Header_logo:hover {
   cursor: pointer;
@@ -144,7 +138,7 @@ button {
   display: flex;
 }
 .right_inner {
-  margin-left: 10px;
+  margin-left: 20px;
   margin-top: 15px;
 }
 .lang {
@@ -152,6 +146,7 @@ button {
   background-color: black;
   border: none;
   font-weight: bold;
+  margin-left: 5px;
 }
 .hello {
   color: white;
@@ -165,7 +160,7 @@ button {
 .hello p {
   margin: 0;
   padding: 0;
-  font-size: 13px;
+  font-size: 10px;
 }
 .in,
 .hello {
@@ -196,10 +191,16 @@ button {
 .crt {
   margin-top: 20px;
 }
+.user_login {
+  width: 100px;
+}
 .counter {
   position: relative;
   font-weight: bold;
   right: 30px;
+}
+.additional_header {
+  margin-top: 20px;
 }
 @media screen and (max-width: 576px) {
   .Header {
@@ -209,6 +210,221 @@ button {
   }
 
   .lang {
+    display: none;
+  }
+} */
+* {
+  margin: 0;
+  padding: 0;
+}
+.fixed {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.header__container {
+  background-color: #1a1a1a;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: white;
+  height: 70px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.logo__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 250px;
+}
+.logo__container img {
+  width: 80%;
+  padding-top: 5px;
+  padding-left: 20px;
+  vertical-align: middle;
+}
+
+.delevery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  font-weight: bold;
+  padding: 5px;
+}
+.delevery p {
+  font-size: 10px;
+}
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  flex: 1;
+}
+.search select,
+.search input {
+  padding: 9px;
+  font-weight: bold;
+  outline: 1px solid white;
+  font-size: 16px;
+}
+.search select {
+  border: none;
+  padding: 13px;
+}
+.search input {
+  border: 1px solid white;
+  width: 100%;
+  margin-right: -2px;
+}
+.search svg {
+  padding: 7px;
+  background: #febd69;
+  color: #1a1a1a;
+}
+.search svg:hover {
+  background-color: #d49644;
+}
+.search:focus-within {
+  border: 2px solid rbg(235, 161, 173);
+}
+.order_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 450px;
+  text-align: center;
+  gap: 10px;
+}
+.order_container a {
+  text-decoration: none;
+  color: white;
+}
+.order_container p {
+  font-size: 10px;
+}
+
+.language {
+  width: 100px;
+  display: flex;
+  padding: 10px;
+}
+.language select {
+  background-color: #1a1a1a;
+  border: none;
+  color: white;
+}
+.language img {
+  width: 40%;
+}
+.cart {
+  position: relative;
+}
+.cart span {
+  position: absolute;
+  font-weight: bold;
+  top: -6px;
+  font-size: 20px;
+  background-color: #1a1a1a;
+  left: 14px;
+  color: orange;
+}
+
+/* Lower Container CSS */
+.order_container a:hover,
+.delevery:hover,
+.logo__container a:hover,
+.logo__container ul li :hover {
+  border: 1px solid white;
+  border: radius 3px;
+}
+
+.lower_container {
+  background-color: #232f3e;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+.lower_container ul {
+  display: flex;
+  list-style: none;
+  gap: 5px;
+}
+.lower_container ul li {
+  padding: 8px;
+}
+.lower_container ul li:first-child {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+.userImg {
+  width: 50px;
+  height: 50px;
+}
+
+.userinfo {
+  position: absolute;
+  top: 100%;
+  right: 1%;
+  width: 250px;
+  transition: max-height 0.05s;
+}
+
+.userdetail {
+  height: 150px;
+  background-color: rgb(14, 13, 13);
+  color: rgb(255, 252, 252);
+  margin: 2px;
+  border-radius: 12px;
+}
+.userdetail p {
+  padding: 10px;
+  text-align: center;
+}
+.logoicon:hover {
+  color: red;
+  cursor: pointer;
+}
+.userflex {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 18px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.imgProfile {
+  width: 80px;
+}
+.delivery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.delivery_txts p {
+  padding: 0;
+  margin: 0;
+}
+/* CSS to Make Responsive */
+@media screen and (max-width: 576px) {
+  .header__container {
+    display: flex;
+    flex-direction: column !important;
+    height: auto;
+  }
+
+  .lower_container ul li:not(:first-child) {
+    display: none;
+  }
+  .language {
     display: none;
   }
 }

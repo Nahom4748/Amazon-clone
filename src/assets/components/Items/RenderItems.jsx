@@ -37,7 +37,7 @@ function RenderItems({ item }) {
 
   return (
     <div className={itemscss.items}>
-      <div onClick={() => seto(true)}>
+      <div onClick={() => seto(true)} className={itemscss.all_item_description}>
         <div className={itemscss.itemimge}>
           <img src={image} alt="" />
         </div>

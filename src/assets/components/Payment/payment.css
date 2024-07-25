@@ -1,0 +1,67 @@
+.card_Element {
+  max-width: 350px;
+  width: 90%;
+}
+.Payment_inner_container {
+  width: 60%;
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(128, 128, 128, 0.623);
+}
+.Payment_container {
+  background-color: rgba(241, 240, 240, 0.842);
+}
+.payment_list_items {
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: 6fr 5fr 1fr;
+}
+.payment_list_items img {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+}
+.Payment_title {
+  padding-top: 10px;
+  font-size: 10px;
+  font-weight: bold;
+}
+.Payment_list_title {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+.TITLE {
+  font-weight: bold;
+  font-size: 13px;
+  background-color: rgb(240, 237, 237);
+  display: flex;
+  justify-content: space-between;
+}
+.total_price {
+  display: flex;
+  margin-left: 650px;
+}
+.Card_container {
+  margin: 10px;
+}
+.Card_inner_container {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+.Pay_on {
+  width: 200px;
+  border: none;
+  padding: 5px;
+  background-color: orange;
+  margin-top: 20px;
+  margin: auto;
+  margin: 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-left: 90px;
+}
+.card_Element {
+  padding: 10px;
+}

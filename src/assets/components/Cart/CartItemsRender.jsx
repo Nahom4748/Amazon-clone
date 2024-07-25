@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import "./cart.css";
 import { Type } from "../../utility/Action.type";
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever";

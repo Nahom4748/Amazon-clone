@@ -1,0 +1,105 @@
+.orders_title {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  background-color: antiquewhite;
+}
+.orders_title p {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 190px;
+  font-weight: bold;
+  text-align: center;
+}
+.ech_orders {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+.ech_orders p {
+  width: 190px;
+  padding: 6px;
+  text-align: center;
+}
+.echorder_outer {
+  width: 80%;
+  margin: auto;
+  background-color: #f1f1f1;
+}
+.ech_orders:nth-child(even) {
+  background: rgb(255, 255, 255);
+}
+.ech_orders:hover {
+  transform: scale(1.009);
+  cursor: pointer;
+  background-color: #eee9e9;
+}
+.modal {
+  height: 440px;
+  position: fixed;
+  width: 80%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(255, 255, 255);
+  /* box-shadow: 0px 0px 0px 13px rgba(0, 0, 0, 0.219); */
+  box-shadow: 0px 0px 40px rgba(15, 15, 15, 0.753);
+  border-radius: 20px;
+  padding-right: 30px;
+  margin: auto;
+  animation: dropTop 0.3s linear;
+}
+.clo:hover {
+  cursor: pointer;
+  color: red;
+}
+.carousel-container1 {
+  position: relative;
+  box-sizing: border-box;
+  max-width: 10%;
+  width: 10%;
+  height: 20px;
+  max-height: 50px;
+}
+
+.carousel-gradient1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 20%; /* Adjust the height as needed */
+
+  pointer-events: none; /* Ensure the gradient doesn't interfere with carousel interaction */
+}
+.element_img {
+  width: 60px;
+  height: 80px;
+}
+.ordersTitle {
+  text-align: center;
+}
+.ordersTitle {
+  width: 80%;
+  margin: 12px auto;
+  background-color: lightgray;
+}
+.No_user {
+  background-color: #eeeeee;
+  height: 50vh;
+}
+.No_user_container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+.No_user_container a {
+  text-decoration: none;
+  color: black;
+}
+.No_user_container a:hover {
+  text-decoration: underline;
+  color: blue;
+}

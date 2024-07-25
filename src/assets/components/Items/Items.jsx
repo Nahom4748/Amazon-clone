@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-// import itemscss from "./items.module.css";
 import axios from "axios";
 import Renderitems from "./RenderItems";
 import itemscss from "./items style/items.module.css";

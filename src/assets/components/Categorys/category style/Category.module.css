@@ -1,6 +1,6 @@
 .catalogs {
   width: 100%;
-  max-width: 250px;
+  max-width: 100%;
   padding: 0px 10px;
   display: flex;
 }
@@ -43,4 +43,9 @@
 .categort_item:hover {
   cursor: pointer;
   transform: scale(1.04);
+}
+@media (max-width: 763px) {
+  .catalogs {
+    display: none;
+  }
 }

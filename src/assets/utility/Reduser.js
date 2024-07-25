@@ -1,6 +1,7 @@
 import { Type } from "./Action.type";
 export const Initial = {
   basket: [],
+  user: null,
 };
 export const Reduser = (state, action) => {
   switch (action.type) {
@@ -11,7 +12,6 @@ export const Reduser = (state, action) => {
             ? { ...item, quantity: item.quantity + 1 }
             : item
         );
-
         return {
           ...state,
           basket: updatedBasket,
@@ -41,7 +41,17 @@ export const Reduser = (state, action) => {
           basket: updatedBasket.filter((item) => item.quantity > 0),
         };
       }
-
+    case Type.USER_AUTH: {
+      return {
+        ...state,
+        user: action.user,
+      };
+    }
+    case Type.DELETE_ALL:
+      return {
+        ...state,
+        basket: [],
+      };
     default:
       return state;
   }

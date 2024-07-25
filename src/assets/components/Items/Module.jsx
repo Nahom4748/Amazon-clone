@@ -17,6 +17,7 @@ const Module = ({ data }) => {
             alt: "Wristwatch by Ted Baker London",
             isFluidWidth: true,
             src: img,
+            height: 90,
           },
           largeImage: {
             src: img,

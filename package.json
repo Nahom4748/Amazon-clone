@@ -16,6 +16,9 @@
     "@mui/icons-material": "^5.16.1",
     "@mui/material": "^5.16.1",
     "@react-icons/all-files": "^4.1.0",
+    "@stripe/react-stripe-js": "^2.7.3",
+    "@stripe/stripe-js": "^4.1.0",
+    "antd": "^5.19.3",
     "axios": "^1.7.2",
     "babel-template": "^6.26.0",
     "bootstrap": "^5.3.3",
@@ -31,6 +34,7 @@
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.24.1",
     "react-spinners": "^0.14.1",
+    "react-toastify": "^10.0.5",
     "sweetalert2": "^11.6.13"
   },
   "devDependencies": {

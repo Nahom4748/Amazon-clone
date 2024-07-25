@@ -87,8 +87,39 @@
   display: flex;
   text-align: center;
   justify-items: center;
+  font-size: 18px;
   padding: 10px;
 }
 .leftcart div b {
   text-align: center;
+}
+.button_check_in {
+  margin: auto;
+  border: none;
+  background-color: rgb(255, 216, 20);
+  border-radius: 8px;
+  font-size: small;
+  width: 18vw;
+  padding: 8px;
+}
+.button_check_in:hover {
+  cursor: pointer;
+  background-color: rgb(202, 169, 0);
+}
+.button_check_container {
+  height: 70px;
+  display: flex;
+}
+.empty_cart {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 12px 12px;
+  box-shadow: 0px 0px 10px black;
+}
+.empty_cart img {
+  width: 180px;
+  height: 180px;
+  margin: auto;
 }

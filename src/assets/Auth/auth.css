@@ -1,0 +1,70 @@
+.auth {
+  text-align: center;
+  height: 80vh;
+}
+.auth--logo {
+  height: 120px;
+  width: 120px;
+  object-fit: contain;
+  margin: 20px auto;
+}
+.auth--logo img {
+  width: 100%;
+  height: 100%;
+}
+.auth--logo img:hover {
+  cursor: pointer;
+}
+.login_form {
+  width: 95%;
+  margin: auto;
+  text-align: left;
+  box-sizing: border-box;
+}
+.login_outer_container {
+  box-shadow: 0px 0px 2px black;
+  /* border: 2px solid rgb(0, 0, 0); */
+  width: 25%;
+  margin: auto;
+  text-align: left;
+  padding: 20px;
+}
+.input_email input,
+.input_password input {
+  width: 280px;
+}
+.input_password small {
+  font-weight: bold;
+}
+
+.Submit_button {
+  margin-top: 10px;
+  width: 280px;
+  border: none;
+  border-radius: 8px;
+  padding: 4px;
+  background: rgb(236, 236, 24);
+}
+.terms {
+  margin: auto;
+  padding-top: 15px;
+  width: 90%;
+}
+.sign_up_container {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.sign_up_btn {
+  width: 340px;
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.199);
+  border-radius: 5px;
+}
+.new_Name input {
+  width: 340px;
+  margin: auto;
+}
+.new_Name {
+  padding: 10px;
+}

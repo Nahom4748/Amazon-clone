@@ -169,5 +169,13 @@ p {
 }
 .itemimage {
   width: 90px;
+  object-fit: contain;
   border: 2px solid red;
+}
+.all_item_description:hover {
+  cursor: pointer;
+}
+.itemimage img {
+  height: 10px;
+  object-fit: contain;
 }
