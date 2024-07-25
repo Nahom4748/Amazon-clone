@@ -60,6 +60,12 @@ function Payment() {
       Swal.fire("Payment completed Success fully");
       navigate("/");
     } catch (error) {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Something went wrong!",
+        footer: error.message,
+      });
       console.log(error);
     }
   };

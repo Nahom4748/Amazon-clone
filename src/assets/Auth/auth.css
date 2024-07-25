@@ -1,10 +1,12 @@
 .auth {
   text-align: center;
   height: 80vh;
+  width: 100%;
+  margin: auto;
 }
 .auth--logo {
   height: 120px;
-  width: 120px;
+  width: 10%;
   object-fit: contain;
   margin: 20px auto;
 }
@@ -31,7 +33,7 @@
 }
 .input_email input,
 .input_password input {
-  width: 280px;
+  width: 90%;
 }
 .input_password small {
   font-weight: bold;
@@ -39,7 +41,7 @@
 
 .Submit_button {
   margin-top: 10px;
-  width: 280px;
+  width: 90%;
   border: none;
   border-radius: 8px;
   padding: 4px;
@@ -62,9 +64,26 @@
   border-radius: 5px;
 }
 .new_Name input {
-  width: 340px;
+  width: 40px;
   margin: auto;
 }
 .new_Name {
   padding: 10px;
+}
+@media (max-width: 768px) {
+  .login_outer_container {
+    width: 90%;
+  }
+  .input_email input,
+  .input_password input {
+    width: 90%;
+    margin: 6px;
+  }
+  .auth--logo {
+    width: 30%;
+  }
+  .Submit_button,
+  .sign_up_btn {
+    width: 90%;
+  }
 }

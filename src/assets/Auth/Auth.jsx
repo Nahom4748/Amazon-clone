@@ -115,15 +115,6 @@ function Auth() {
       </div>
       <div className="sign_up_container">
         <small>New to Amazon?</small> <br />
-        <div className="new_Name">
-          <input
-            value={displayName}
-            onChange={(e) => SetdisplayName(e.target.value)}
-            type="text"
-            id="displayName"
-            placeholder="If You New ? insert Your Name "
-          />
-        </div>
         <button
           className="sign_up_btn"
           name="sugnUp"

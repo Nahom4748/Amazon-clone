@@ -1,8 +1,9 @@
 .catalogs {
   width: 100%;
-  max-width: 100%;
+  max-width: 350px;
   padding: 0px 10px;
   display: flex;
+  gap: 8px;
 }
 
 .categort_item {
@@ -44,8 +45,10 @@
   cursor: pointer;
   transform: scale(1.04);
 }
-@media (max-width: 763px) {
+
+@media (max-width: 768px) {
   .catalogs {
-    display: none;
+    display: flex;
+    flex-direction: row;
   }
 }
